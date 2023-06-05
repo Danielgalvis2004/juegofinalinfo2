@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>IMAGENES/botiquin.png</file>
+        <file>IMAGENES/GATORA.png</file>
+        <file>IMAGENES/chaleco.png</file>
+        <file>IMAGENES/CHALE.png</file>
+        <file>IMAGENES/corazon.png</file>
+        <file>IMAGENES/CORA.png</file>
+        <file>IMAGENES/GATO.png</file>
+        <file>IMAGENES/BOTI.png</file>
+        <file>IMAGENES/boti.jpg</file>
+        <file>IMAGENES/bot.png</file>
+        <file>IMAGENES/cr7 cara.png</file>
+        <file>IMAGENES/bruna.png</file>
+        <file>IMAGENES/brunaa.png</file>
+        <file>IMAGENES/arik.png</file>
+        <file>IMAGENES/ten hag.png</file>
+        <file>IMAGENES/nibi.png</file>
+    </qresource>
+</RCC>
