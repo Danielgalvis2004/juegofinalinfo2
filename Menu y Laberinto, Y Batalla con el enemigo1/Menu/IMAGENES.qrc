@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/prefix1"/>
+    <qresource prefix="/">
+        <file>IMAGENES/noche.png</file>
+        <file>IMAGENES/cr7.png</file>
+        <file>IMAGENES/scr7.png</file>
+        <file>IMAGENES/new.png</file>
+        <file>IMAGENES/arik.png</file>
+        <file>IMAGENES/bot.png</file>
+        <file>IMAGENES/boti.jpg</file>
+        <file>IMAGENES/BOTI.png</file>
+        <file>IMAGENES/botiquin.png</file>
+        <file>IMAGENES/bruna.png</file>
+        <file>IMAGENES/brunaa.png</file>
+        <file>IMAGENES/bruno.png</file>
+        <file>IMAGENES/CHALE.png</file>
+        <file>IMAGENES/chaleco.png</file>
+        <file>IMAGENES/CORA.png</file>
+        <file>IMAGENES/corazon.png</file>
+        <file>IMAGENES/cr7 cara.png</file>
+        <file>IMAGENES/GATO.png</file>
+        <file>IMAGENES/GATORA.png</file>
+        <file>IMAGENES/gatorade.png</file>
+        <file>IMAGENES/nibi.png</file>
+        <file>IMAGENES/nuevo.png</file>
+        <file>IMAGENES/ten hag.png</file>
+    </qresource>
+</RCC>
