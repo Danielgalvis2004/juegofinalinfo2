@@ -21,6 +21,8 @@ private:
     QGraphicsScene *escena;
     QGraphicsPixmapItem *fondo;
     QGraphicsPixmapItem *camara;
+    QGraphicsPixmapItem *cr71;
+    QGraphicsPixmapItem *ene2;
     double tiempo; // Variable para almacenar el tiempo actual
 };
 

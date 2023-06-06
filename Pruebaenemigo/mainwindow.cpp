@@ -17,13 +17,21 @@ MainWindow::MainWindow(QWidget *parent)
     fondo->setPos(0,0); // Establece la posición del fondo en la escena
     fondo->setPixmap(QPixmap(":/new/prefix1/Imagen/mapCIUDSd.png").scaled(700,400)); // Asigna una imagen al fondo
     bruno = new QGraphicsPixmapItem; // Crea un elemento de mapa de pixeles para Bruno
-    bruno->setPos(300,100); // Establece la posición inicial de Bruno en la escena
+    bruno->setPos(300,230); // Establece la posición inicial de Bruno en la escena
     bruno->setPixmap(QPixmap(":/new/prefix1/Imagen/guayoimp.png").scaled(100,100)); // Asigna una imagen a Bruno
     escena->addItem(fondo); // Agrega el fondo a la escena
     escena->addItem(bruno); // Agrega Bruno a la escena
+    brunoper = new QGraphicsPixmapItem;
+    brunoper->setPos(550,100);
+    brunoper->setPixmap(QPixmap(":/new/prefix1/Imagen/brunoper.png").scaled(120,280));
+    escena->addItem(brunoper); // Agrega Bruno a la escena
+    cr71 = new QGraphicsPixmapItem;
+    cr71->setPos(50,100);
+    cr71->setPixmap(QPixmap(":/new/prefix1/Imagen/nuevo.png").scaled(120,280));
+    escena->addItem(cr71); // Agrega Bruno a la escena
 
     // Configurar el movimiento armónico simple
-    amplitude = 100;                     // Ajusta la amplitud según sea necesario
+    amplitude = 170;                     // Ajusta la amplitud según sea necesario
     period = 2000;                       // Ajusta el período según sea necesario
     start = bruno->pos();                // Establecer el punto de inicio actual de Bruno
     destination = start + QPointF(-200, 0); // Establecer el punto de destino a la izquierda

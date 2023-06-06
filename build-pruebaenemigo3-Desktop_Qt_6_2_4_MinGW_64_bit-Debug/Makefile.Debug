@@ -105,7 +105,10 @@ compiler_rcc_clean:
 debug/qrc_Imagen.cpp: ../pruebaenemigo3/Imagen.qrc \
 		D:/Qt/6.2.4/mingw_64/bin/rcc.exe \
 		../pruebaenemigo3/Imagen/mapCIUDSd.png \
-		../pruebaenemigo3/Imagen/camara.png
+		../pruebaenemigo3/Imagen/camara.png \
+		../pruebaenemigo3/Imagen/periodista.png \
+		../pruebaenemigo3/Imagen/BALON1.png \
+		../pruebaenemigo3/Imagen/nuevo.png
 	D:\Qt\6.2.4\mingw_64\bin\rcc.exe -name Imagen ..\pruebaenemigo3\Imagen.qrc -o debug\qrc_Imagen.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
@@ -253,30 +256,6 @@ debug/moc_mainwindow.cpp: ../pruebaenemigo3/mainwindow.h \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		D:/Qt/6.2.4/mingw_64/include/QtGui/qpainterpath.h \
-		D:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
-		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
-		D:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
-		D:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
-		D:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/QTime \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qdatetime.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qcalendar.h \
 		debug/moc_predefs.h \
 		D:/Qt/6.2.4/mingw_64/bin/moc.exe
 	D:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/ASUS/Documents/GitHub/juegofinalinfo2/build-pruebaenemigo3-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/debug/moc_predefs.h -ID:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -IC:/Users/ASUS/Documents/GitHub/juegofinalinfo2/pruebaenemigo3 -ID:/Qt/6.2.4/mingw_64/include -ID:/Qt/6.2.4/mingw_64/include/QtWidgets -ID:/Qt/6.2.4/mingw_64/include/QtGui -ID:/Qt/6.2.4/mingw_64/include/QtCore -I. -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\pruebaenemigo3\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -460,10 +439,7 @@ debug/main.o: ../pruebaenemigo3/main.cpp ../pruebaenemigo3/mainwindow.h \
 		D:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
 		D:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
 		D:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
-		D:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/QTime \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qdatetime.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qcalendar.h
+		D:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\pruebaenemigo3\main.cpp
 
 debug/mainwindow.o: ../pruebaenemigo3/mainwindow.cpp ../pruebaenemigo3/mainwindow.h \
@@ -602,6 +578,8 @@ debug/mainwindow.o: ../pruebaenemigo3/mainwindow.cpp ../pruebaenemigo3/mainwindo
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		D:/Qt/6.2.4/mingw_64/include/QtGui/qpainterpath.h \
+		ui_mainwindow.h \
+		D:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
 		D:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
@@ -623,10 +601,6 @@ debug/mainwindow.o: ../pruebaenemigo3/mainwindow.cpp ../pruebaenemigo3/mainwindo
 		D:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
 		D:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
 		D:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/QTime \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qdatetime.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/qcalendar.h \
-		ui_mainwindow.h \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/QGraphicsView \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qgraphicsview.h \
 		D:/Qt/6.2.4/mingw_64/include/QtGui/qpainter.h \
@@ -634,7 +608,14 @@ debug/mainwindow.o: ../pruebaenemigo3/mainwindow.cpp ../pruebaenemigo3/mainwindo
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qscrollarea.h \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
-		D:/Qt/6.2.4/mingw_64/include/QtCore/Qtimer \
+		D:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		D:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
+		D:/Qt/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		D:/Qt/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h \
+		D:/Qt/6.2.4/mingw_64/include/QtWidgets/QWidget \
+		D:/Qt/6.2.4/mingw_64/include/QtCore/QTimer \
 		D:/Qt/6.2.4/mingw_64/include/QtCore/qtimer.h \
 		D:/Qt/6.2.4/mingw_64/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\pruebaenemigo3\mainwindow.cpp

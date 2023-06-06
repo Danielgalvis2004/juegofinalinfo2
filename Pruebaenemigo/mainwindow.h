@@ -23,6 +23,8 @@ private:
     QGraphicsScene *escena;
     QGraphicsPixmapItem *fondo;
     QGraphicsPixmapItem *bruno;
+    QGraphicsPixmapItem *brunoper;
+    QGraphicsPixmapItem *cr71;
     qreal amplitude;     // Amplitud del movimiento
     qreal period;        // Período del movimiento en milisegundos
     QPointF start;       // Punto de inicio actual de Bruno

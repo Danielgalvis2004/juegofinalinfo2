@@ -5,6 +5,8 @@
 #include <QGraphicsPixmapItem>
 #include <QApplication>
 #include <QTime>
+#include <QGraphicsItem>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,5 +26,7 @@ private:
     QGraphicsScene *escena;
     QGraphicsPixmapItem *fondo;
     QGraphicsPixmapItem *piano;
+    QGraphicsPixmapItem *cr71;
+    QGraphicsPixmapItem *ene1;
 
 };

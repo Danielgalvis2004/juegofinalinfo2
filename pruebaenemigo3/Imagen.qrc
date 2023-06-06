@@ -2,5 +2,8 @@
     <qresource prefix="/new/prefix1">
         <file>Imagen/camara.png</file>
         <file>Imagen/mapCIUDSd.png</file>
+        <file>Imagen/periodista.png</file>
+        <file>Imagen/BALON1.png</file>
+        <file>Imagen/nuevo.png</file>
     </qresource>
 </RCC>
